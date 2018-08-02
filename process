@@ -1,0 +1,39 @@
+Step 1 : First Stop all Oracle services.
+
+    open run(i.e Windows key + R) -> services.msc
+
+    Click on Enter.
+
+Step 2 :  Stop all the services related to Oracle
+
+    Right click on service name and click on stop.
+
+Step 3 : Open Registry editor
+
+    open run(i.e Windows key + R) -> regedit.exe
+
+Step 4 : On Registry editor expand SOFTWARE
+
+    Locate
+
+    HKEY_LOCAL_MACHINE -> SOFTWARE
+
+    Delete ORACLE folder which in inside SOFTWARE folder.
+
+Step 5 : On Registry editor expand SYSTEM
+
+    Locate
+
+    HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Services
+
+    Delete all keys start with ORA**
+
+    Close Registry editor.
+
+Step 6 : Delete $ORACLE_HOME(example : app folder default created by oracle) folder
+
+Step 7 : Delete Oracle folder in Program Files
+
+    C:\Program Files or Your_Drive:\Program Files
+
+Step 8 : Restart your System.
